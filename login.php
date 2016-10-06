@@ -99,6 +99,9 @@
 		$notice = login($_POST["loginEmail"], $_POST["loginPassword"]);
 	}
 	
+	
+
+	
 ?>
 <!DOCTYPE html>
 <html>
