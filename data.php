@@ -16,11 +16,14 @@
 	
 	$notice = "";
 	// mõlemad login vormi väljad on täidetud
-	if (	isset($_POST["noteNote"]) && 
-			isset($_POST["noteColor"]) && 
-			!empty($_POST["noteNote"]) && 
-			!empty($_POST["noteColor"]) 
-	) 
+	if (	isset($_POST["note"]) && 
+			isset($_POST["color"]) && 
+			!empty($_POST["note"]) && 
+			!empty($_POST["color"]) 
+	) {
+		$notice = note($_POST["note"], $_POST["color"]);
+	}
+	
 	
 	
 ?>

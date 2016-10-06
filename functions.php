@@ -1,6 +1,6 @@
 <?php 
 	// functions.php
-	
+	require("../../config.php");
 	session_start();
 	
 	$database = "if16_melissabramanis";
@@ -83,8 +83,8 @@
 		$mysqli = new mysqli(
 		
 		$GLOBALS["serverHost"], 
-		$GLOBALS["serverNote"],  
-		$GLOBALS["serverColor"],  
+		$GLOBALS["serverUsername"],  
+		$GLOBALS["serverPassword"],  
 		$GLOBALS["database"]
 		
 		);
